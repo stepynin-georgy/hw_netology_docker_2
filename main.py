@@ -5,6 +5,7 @@ import mysql.connector
 from datetime import datetime
 
 app = Flask(__name__)
+
 db_host=os.environ.get('DB_HOST')
 db_user=os.environ.get('DB_USER')
 db_password=os.environ.get('DB_PASSWORD')
