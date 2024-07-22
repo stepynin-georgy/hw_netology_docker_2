@@ -1,8 +1,9 @@
-haproxy
+haproxy/
 LICENSE
 main.py
-nginx
+nginx/
 proxy.yaml
 requirements.txt
 schema.pdf
-
+.env_web
+.env_db
