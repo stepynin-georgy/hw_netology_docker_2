@@ -3,7 +3,7 @@
 2. Создайте файл с именем ```Dockerfile.python``` для сборки данного проекта(для 3 задания изучите https://docs.docker.com/compose/compose-file/build/ ). Используйте базовый образ ```python:3.9-slim```. Протестируйте корректность сборки. Не забудьте dockerignore.
    ![изображение](https://github.com/stepynin-georgy/hw_netology_docker_2/blob/main/images/Screenshot_6.png)
 4. (Необязательная часть, *) Изучите инструкцию в проекте и запустите web-приложение без использования docker в venv. (Mysql БД можно запустить в docker run).
-   ![изображение](https://github.com/stepynin-georgy/hw_netology_docker_2/blob/main/images/Screenshot_9.png)
+   ![изображение](https://github.com/stepynin-georgy/hw_netology_docker_2/blob/main/images/Screenshot_5.png)
    Mysql запустил с помочью docker-compose.yaml
 6. (Необязательная часть, *) По образцу предоставленного python кода внесите в него исправление для управления названием используемой таблицы через ENV переменную.
 ---
