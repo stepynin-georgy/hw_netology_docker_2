@@ -7,3 +7,4 @@ requirements.txt
 schema.pdf
 .env_web
 .env_db
+opt/
