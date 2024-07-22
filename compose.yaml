@@ -2,15 +2,10 @@ include:
   - proxy.yaml
 
 services:
-
   db:
     image: mysql:8
     restart: on-failure
-    environment:
-      MYSQL_ROOT_PASSWORD: 12345
-      MYSQL_USER: user
-      MYSQL_DATABASE: db1
-      MYSQL_PASSWORD: 12345
+    env_file: .env_db
     ports:
       - 3306:3306
     volumes:
@@ -18,16 +13,12 @@ services:
     networks:
       backend:
         ipv4_address: 172.20.0.10
+    command: ["mysqld", "--mysql-native-password=ON"]
 
   web:
     image: task_1
     restart: on-failure
-    environment:
-      - DB_HOST=172.20.0.10
-      - DB_TABLE=requests
-      - DB_USER=root
-      - DB_NAME=db1
-      - DB_PASSWORD=12345
+    env_file: .env_web
     depends_on:
       - db
     ports:
